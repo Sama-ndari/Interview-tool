@@ -3,7 +3,6 @@ from openai import OpenAI
 from streamlit_js_eval import streamlit_js_eval
 
 # Setting up the Streamlit page configuration
-st.set_page_config(page_title="StreamlitChatMessageHistory", page_icon="💬")
 col1, col2 = st.columns([1, 5])
 
 with col1:
