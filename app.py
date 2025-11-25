@@ -2,6 +2,14 @@ import streamlit as st
 from openai import OpenAI
 from streamlit_js_eval import streamlit_js_eval
 
+
+
+
+st.set_page_config(
+    page_title="Interview Bot",
+    page_icon="icon.png"
+)
+
 # Setting up the Streamlit page configuration
 col1, col2 = st.columns([1, 5])
 
@@ -11,11 +19,6 @@ with col1:
 with col2:
     st.markdown("## AI Interviewer")
 
-
-st.set_page_config(
-    page_title="Interview Bot",
-    page_icon="icon.png"
-)
 
 # Initialize session state variables
 if "setup_complete" not in st.session_state:
