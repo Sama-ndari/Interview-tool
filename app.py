@@ -17,7 +17,7 @@ with col1:
     st.image("icon.png", width=80)
 
 with col2:
-    st.markdown("## AI Interviewer")
+    st.markdown("## AI Interviewer — Prototype🚧")
 
 
 # Initialize session state variables
