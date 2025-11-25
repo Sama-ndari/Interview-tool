@@ -108,8 +108,19 @@ if st.session_state.setup_complete and not st.session_state.feedback_shown and n
     icon="👋🏾",
     )
 
+    # Check if API key is empty or missing
+    if "OPENAI_API_KEY" not in st.secrets or not st.secrets["OPENAI_API_KEY"].strip():
+        st.warning(
+            f"⚠️ Hey {st.session_state['name']} ! This prototype isn’t fully wired yet.\n\n"
+            "I need an OpenAI API key to actually run the interview.  "
+            "For now, feel free to explore the UI — the magic happens once the key is added🤖🔥."
+        )
+        st.stop()
+
     # Initialize OpenAI client
     client = OpenAI(api_key=st.secrets["OPENAI_API_KEY"])
+
+
 
     # Setting OpenAI model if not already initialized
     if "openai_model" not in st.session_state:
