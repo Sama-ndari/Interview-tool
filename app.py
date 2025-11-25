@@ -4,7 +4,19 @@ from streamlit_js_eval import streamlit_js_eval
 
 # Setting up the Streamlit page configuration
 st.set_page_config(page_title="StreamlitChatMessageHistory", page_icon="💬")
-st.title("Chatbot")
+col1, col2 = st.columns([1, 5])
+
+with col1:
+    st.image("icon.png", width=80)
+
+with col2:
+    st.markdown("## AI Interviewer")
+
+
+st.set_page_config(
+    page_title="Interview Bot",
+    page_icon="icon.png"
+)
 
 # Initialize session state variables
 if "setup_complete" not in st.session_state:

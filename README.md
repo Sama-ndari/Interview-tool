@@ -1,3 +1,6 @@
+<p align="center">
+  <img src="icon.png" alt="App Logo" width="140"/>
+</p>
 # 🎙️ AI Interview Simulator – Streamlit Interview Chatbot
 
 This project is a fully interactive **AI-powered interview simulator** built with **Streamlit**, **OpenAI**, and a clean session-state architecture. It mimics a real interview experience, generates dynamic questions based on the user’s profile, tracks the entire conversation, and finishes with an automated performance evaluation.
